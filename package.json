@@ -1,0 +1,17 @@
+{
+  "name": "rake-semver",
+  "version": "1.0.0",
+  "description": "Task for semver.",
+  "main": "index.rake",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afeiship/rake-semver.git"
+  },
+  "keywords": ["rake", "task","semver"],
+  "author": "afei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afeiship/rake-semver/issues"
+  },
+  "homepage": "https://github.com/afeiship/rake-semver#readme"
+}
