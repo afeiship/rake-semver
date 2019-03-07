@@ -7,11 +7,16 @@ namespace :semver do
     sh "semver init"
   end
 
+  desc "Semver save"
+  task :save do
+    v = SemVer.find
+    v.save
+  end
+
   desc "Patch increace"
   task :patch_inc do |task, args|
     v = SemVer.find
     v.special = "-alpha"
     v.patch += 1
-    v.save
   end
 end
