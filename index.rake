@@ -12,7 +12,6 @@ namespace :semver do
     v = SemVer.find
     v.special = "-alpha"
     v.patch += 1
-    p v.to_s
     v.save
   end
 end
