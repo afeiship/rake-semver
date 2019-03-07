@@ -2,16 +2,17 @@
 require "semver"
 
 namespace :semver do
-  # rake hello_with_args[afei,bash]
   desc "Semver init"
-  task :init[:major, :minor, :patch] do |task, args|
-    # SemVer.new a
+  task :init do
+    sh "semver init"
   end
-  # rake hello_with_args[afei,bash]
-  desc "want to say hello"
+
+  desc "Patch increace"
   task :patch_inc do |task, args|
     v = SemVer.find
+    v.special = "-alpha"
     v.patch += 1
+    p v.to_s
     v.save
   end
 end
